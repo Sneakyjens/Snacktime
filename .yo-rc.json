@@ -1,0 +1,11 @@
+{
+  "generator-easy-ui5": {
+    "projectname": "snacktime",
+    "namespace": "p36.snacktime",
+    "platform": "Cloud Foundry HTML5 Application Repository",
+    "viewtype": "XML",
+    "viewname": "Main",
+    "ui5libs": "Content delivery network (SAPUI5)",
+    "newdir": false
+  }
+}

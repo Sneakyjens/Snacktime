@@ -1,0 +1,8 @@
+{
+  "welcomeFile": "p36snacktimesnacktime/",
+  "authenticationMethod": "route",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": []
+}
