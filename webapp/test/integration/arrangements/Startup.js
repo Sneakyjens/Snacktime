@@ -3,12 +3,12 @@ sap.ui.define([
 ], function(Opa5) {
   "use strict";
 
-  return Opa5.extend("p36.snacktime.snacktime.test.integration.arrangements.Startup", {
+  return Opa5.extend("p36.snacktime.test.integration.arrangements.Startup", {
 
     iStartMyApp: function () {
       this.iStartMyUIComponent({
         componentConfig: {
-          name: "p36.snacktime.snacktime",
+          name: "p36.snacktime",
           async: true,
           manifest: true
         }

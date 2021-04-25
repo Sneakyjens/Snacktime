@@ -1,7 +1,7 @@
 {
   "_version": "1.12.0",
   "sap.app": {
-    "id": "p36.snacktime.snacktime",
+    "id": "p36.snacktime",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -30,10 +30,10 @@
 
   "sap.ui5": {
     "rootView": {
-      "viewName": "p36.snacktime.snacktime.view.Main",
+      "viewName": "p36.snacktime.view.FlexibleColumnLayout",
       "type": "XML",
       "async": true,
-      "id": "app"
+      "id": "fcl"
     },
     "dependencies": {
       "minUI5Version": "1.60.0",
@@ -51,34 +51,54 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "p36.snacktime.snacktime.i18n.i18n"
+          "bundleName": "p36.snacktime.i18n.i18n"
         }
+      },
+      "": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "order": {
+        "type": "sap.ui.model.json.JSONModel"
       }
     },
     "resources": {
-      "css": [{
-        "uri": "css/style.css"
-      }]
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
     },
     "routing": {
       "config": {
-        "routerClass": "sap.m.routing.Router",
+        "routerClass": "sap.f.routing.Router",
         "viewType": "XML",
-        "viewPath": "p36.snacktime.snacktime.view",
-        "controlId": "app",
-        "controlAggregation": "pages",
+        "viewPath": "p36.snacktime.view",
+        "controlId": "fcl",
+        "transition": "slide",
         "async": true
       },
-      "routes": [{
-        "name": "RouteMain",
-        "pattern": "RouteMain",
-        "target": ["TargetMain"]
-      }],
+      "routes": [
+        {
+          "name": "Home",
+          "pattern": "",
+          "target": ["TargetHome"]
+        },
+        {
+          "name": "OrderDetail",
+          "pattern": "Order/{orderpath}",
+          "target": ["TargetHome", "TargetOrderDetail"]
+        }
+      ],
       "targets": {
-        "TargetMain": {
+        "TargetHome": {
           "viewType": "XML",
-          "viewLevel": 1,
+          "controlAggregation": "beginColumnPages",
           "viewName": "Main"
+        },
+        "TargetOrderDetail": {
+          "viewType": "XML",
+          "controlAggregation": "midColumnPages",
+          "viewName": "OrderDetail"
         }
       }
     }

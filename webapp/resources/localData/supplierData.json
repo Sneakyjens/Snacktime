@@ -1,0 +1,19 @@
+{
+  "suppliers": [
+    {
+      "title": "King Döner",
+      "id": "1",
+      "img": "./../resources/img/kebab.jpg"
+    },
+    {
+      "title": "Ünye",
+      "id": "2",
+      "img": "./../resources/img/kebab.jpg"
+    },
+    {
+      "title": "Panda",
+      "id": "3",
+      "img": "./../resources/img/chinese.png"
+    }
+  ]
+}
