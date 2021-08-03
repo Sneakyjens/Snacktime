@@ -1,0 +1,13 @@
+<mvc:View controllerName="p36.snacktime.controller.Main"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:f="sap.f">
+	<f:FlexibleColumnLayout
+		autoFocus="false"
+		id="fcl"
+		stateChange="onStateChanged"
+		restoreFocusOnBackNavigation="true"
+		layout="{/layout}"
+		backgroundDesign="Translucent"/>
+</mvc:View>

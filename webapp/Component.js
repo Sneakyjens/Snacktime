@@ -1,13 +1,7 @@
-sap.ui.define([
-  "sap/ui/core/UIComponent",
-  "sap/ui/Device",
-  "p36/snacktime/model/models",
-  "sap/ui/model/json/JSONModel"
-], function(UIComponent, Device, models,JSONModel) {
+sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/Device", "p36/snacktime/model/models", "sap/ui/model/json/JSONModel"], function (UIComponent, Device, models, JSONModel) {
   "use strict";
 
   return UIComponent.extend("p36.snacktime.Component", {
-
     metadata: {
       manifest: "json"
     },
@@ -17,15 +11,14 @@ sap.ui.define([
      * @public
      * @override
      */
-    init: function() {
+    init: function () {
       // call the base component's init function
-      UIComponent.prototype.init.apply(this, arguments);
+      UIComponent.prototype.init.apply(this, arguments); // enable routing
 
-      // enable routing
-      this.getRouter().initialize();
+      this.getRouter().initialize(); // set the device model
 
-      // set the device model
       this.setModel(models.createDeviceModel(), "device");
     }
   });
 });
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9Db21wb25lbnQuanMiXSwibmFtZXMiOlsic2FwIiwidWkiLCJkZWZpbmUiLCJVSUNvbXBvbmVudCIsIkRldmljZSIsIm1vZGVscyIsIkpTT05Nb2RlbCIsImV4dGVuZCIsIm1ldGFkYXRhIiwibWFuaWZlc3QiLCJpbml0IiwicHJvdG90eXBlIiwiYXBwbHkiLCJhcmd1bWVudHMiLCJnZXRSb3V0ZXIiLCJpbml0aWFsaXplIiwic2V0TW9kZWwiLCJjcmVhdGVEZXZpY2VNb2RlbCJdLCJtYXBwaW5ncyI6IkFBQUFBLEdBQUcsQ0FBQ0MsRUFBSixDQUFPQyxNQUFQLENBQWMsQ0FDWix5QkFEWSxFQUVaLGVBRlksRUFHWiw0QkFIWSxFQUlaLDZCQUpZLENBQWQsRUFLRyxVQUFTQyxXQUFULEVBQXNCQyxNQUF0QixFQUE4QkMsTUFBOUIsRUFBcUNDLFNBQXJDLEVBQWdEO0FBQ2pEOztBQUVBLFNBQU9ILFdBQVcsQ0FBQ0ksTUFBWixDQUFtQix5QkFBbkIsRUFBOEM7QUFFbkRDLElBQUFBLFFBQVEsRUFBRTtBQUNSQyxNQUFBQSxRQUFRLEVBQUU7QUFERixLQUZ5Qzs7QUFNbkQ7QUFDSjtBQUNBO0FBQ0E7QUFDQTtBQUNJQyxJQUFBQSxJQUFJLEVBQUUsWUFBVztBQUNmO0FBQ0FQLE1BQUFBLFdBQVcsQ0FBQ1EsU0FBWixDQUFzQkQsSUFBdEIsQ0FBMkJFLEtBQTNCLENBQWlDLElBQWpDLEVBQXVDQyxTQUF2QyxFQUZlLENBSWY7O0FBQ0EsV0FBS0MsU0FBTCxHQUFpQkMsVUFBakIsR0FMZSxDQU9mOztBQUNBLFdBQUtDLFFBQUwsQ0FBY1gsTUFBTSxDQUFDWSxpQkFBUCxFQUFkLEVBQTBDLFFBQTFDO0FBQ0Q7QUFwQmtELEdBQTlDLENBQVA7QUFzQkQsQ0E5QkQiLCJzb3VyY2VzQ29udGVudCI6WyJzYXAudWkuZGVmaW5lKFtcclxuICBcInNhcC91aS9jb3JlL1VJQ29tcG9uZW50XCIsXHJcbiAgXCJzYXAvdWkvRGV2aWNlXCIsXHJcbiAgXCJwMzYvc25hY2t0aW1lL21vZGVsL21vZGVsc1wiLFxyXG4gIFwic2FwL3VpL21vZGVsL2pzb24vSlNPTk1vZGVsXCJcclxuXSwgZnVuY3Rpb24oVUlDb21wb25lbnQsIERldmljZSwgbW9kZWxzLEpTT05Nb2RlbCkge1xyXG4gIFwidXNlIHN0cmljdFwiO1xyXG5cclxuICByZXR1cm4gVUlDb21wb25lbnQuZXh0ZW5kKFwicDM2LnNuYWNrdGltZS5Db21wb25lbnRcIiwge1xyXG5cclxuICAgIG1ldGFkYXRhOiB7XHJcbiAgICAgIG1hbmlmZXN0OiBcImpzb25cIlxyXG4gICAgfSxcclxuXHJcbiAgICAvKipcclxuICAgICAqIFRoZSBjb21wb25lbnQgaXMgaW5pdGlhbGl6ZWQgYnkgVUk1IGF1dG9tYXRpY2FsbHkgZHVyaW5nIHRoZSBzdGFydHVwIG9mIHRoZSBhcHAgYW5kIGNhbGxzIHRoZSBpbml0IG1ldGhvZCBvbmNlLlxyXG4gICAgICogQHB1YmxpY1xyXG4gICAgICogQG92ZXJyaWRlXHJcbiAgICAgKi9cclxuICAgIGluaXQ6IGZ1bmN0aW9uKCkge1xyXG4gICAgICAvLyBjYWxsIHRoZSBiYXNlIGNvbXBvbmVudCdzIGluaXQgZnVuY3Rpb25cclxuICAgICAgVUlDb21wb25lbnQucHJvdG90eXBlLmluaXQuYXBwbHkodGhpcywgYXJndW1lbnRzKTtcclxuXHJcbiAgICAgIC8vIGVuYWJsZSByb3V0aW5nXHJcbiAgICAgIHRoaXMuZ2V0Um91dGVyKCkuaW5pdGlhbGl6ZSgpO1xyXG5cclxuICAgICAgLy8gc2V0IHRoZSBkZXZpY2UgbW9kZWxcclxuICAgICAgdGhpcy5zZXRNb2RlbChtb2RlbHMuY3JlYXRlRGV2aWNlTW9kZWwoKSwgXCJkZXZpY2VcIik7XHJcbiAgICB9XHJcbiAgfSk7XHJcbn0pO1xyXG4iXX0=
