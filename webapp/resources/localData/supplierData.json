@@ -3,17 +3,20 @@
     {
       "title": "King Döner",
       "id": "1",
-      "img": "./../resources/img/kebab.jpg"
+      "img": "./../resources/img/kebab.jpg",
+      "foodType": "kebab"
     },
     {
       "title": "Ünye",
       "id": "2",
-      "img": "./../resources/img/kebab.jpg"
+      "img": "./../resources/img/kebab.jpg",
+      "foodType": "kebab"
     },
     {
       "title": "Panda",
       "id": "3",
-      "img": "./../resources/img/chinese.png"
+      "img": "./../resources/img/chinese.png",
+      "foodType": "asian"
     }
   ]
 }

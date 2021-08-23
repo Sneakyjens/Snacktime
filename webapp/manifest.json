@@ -32,7 +32,7 @@
     "rootView": {
       "viewName": "p36.snacktime.view.FlexibleColumnLayout",
       "type": "XML",
-      "async": true,
+      "async": false,
       "id": "fcl"
     },
     "dependencies": {

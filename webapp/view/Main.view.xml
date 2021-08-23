@@ -1,7 +1,8 @@
  <mvc:View controllerName="p36.snacktime.controller.Main"
   displayBlock="true"
   xmlns="sap.m"
-  xmlns:mvc="sap.ui.core.mvc">
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:cust="p36.snacktime.controls">
   <App id="idAppControl">
     <pages>
       <Page>
@@ -13,9 +14,10 @@
           </Bar>
         </headerContent>
         <content>
-          <FlexBox items="{order>/suppliers}">
+          <FlexBox justifyContent="SpaceAround" items="{order>/suppliers}">
               <items>
-                  <GenericTile class="sapUiSmallMargin" header="{order>title}" press="onPressSupplier"/>
+                <cust:NomTile title="{order>title}" description="Beschte Kebab" foodType="{order>foodType}" press="onPressSupplier"/>
+                  <!-- <GenericTile class="sapUiSmallMargin" header="{order>title}" press="onPressSupplier"/> -->
               </items>
           </FlexBox>
         </content>
