@@ -22,26 +22,18 @@
   "devDependencies": {
     "@babel/cli": "^7.14.3",
     "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.2",
-    "@babel/preset-typescript": "^7.13.0",
-    "@sapui5/ts-types-esm": "1.90.0",
-    "@types/jquery": "3.5.1",
-    "@typescript-eslint/eslint-plugin": "^4.25.0",
-    "@typescript-eslint/parser": "^4.25.0",
     "@ui5/cli": "^1.14.0",
     "babel-preset-transform-ui5": "^7.0.3",
     "cross-var": "^1.1.0",
     "eslint": "^6.8.0",
     "mbt": "1.0.11",
-    "npm-run-all": "^4.1.5",
-    "typescript": "^4.3.2"
+    "npm-run-all": "^4.1.5"
   },
   "ui5": {
     "dependencies": [
       "@openui5/sap.m",
       "@openui5/themelib_sap_belize",
-      "@openui5/themelib_sap_fiori_3",
-      "ui5-middleware-livereload"
+      "@openui5/themelib_sap_fiori_3"
     ]
   }
 }

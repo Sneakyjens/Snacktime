@@ -4,7 +4,14 @@
   xmlns:mvc="sap.ui.core.mvc">
   <App id="idAppControl">
     <pages>
-      <Page title="{i18n>title}">
+      <Page>
+        <headerContent>
+          <Bar>
+            <contentLeft>
+              <Image class="logo" src="../img/logo.svg"/>
+            </contentLeft>
+          </Bar>
+        </headerContent>
         <content>
           <FlexBox items="{order>/suppliers}">
               <items>
