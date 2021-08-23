@@ -26,6 +26,17 @@ sap.ui.define(["sap/ui/core/Control"], function (Control) {
       Control.prototype.init.apply(this, arguments);
     },
 
+    onAfterRendering: function () {
+      this._setEventListeners();
+    },
+
+    _setEventListeners: function () {
+      let jQueryReference = jQuery(this.getDomRef());
+      jQueryReference.on("click", () => {
+        this.firePress();
+      });
+    },
+
     renderer: {
       apiVersion: 2,
       render: (rm, control) => {

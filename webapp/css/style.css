@@ -17,4 +17,5 @@
 .nomTileTitle,
 .nomTileDescription {
   font-family: "Roboto";
+  user-select: none;
 }
